@@ -51,7 +51,7 @@ Cosmic_Ray_Generator_PARMA::Cosmic_Ray_Generator_PARMA()
     settings->WEIGHTS.clear();
     settings->WEIGHTS = Calculate_Weights_from_PARMA();
 
-    std::cout << "\nWeights in the selected energy range: " << std::endl;
+    std::cout << "\nWeights for the selected energy range and altitude: " << std::endl;
 
     int ii = 0;
     for (uint ii = 0; ii < settings->PDG_LIST_ALL.size(); ii++)
