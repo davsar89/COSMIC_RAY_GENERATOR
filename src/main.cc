@@ -28,11 +28,11 @@ int main(int argc, char **argv)
     std::cout << "First particle: " << std::endl;
     std::cout << "  Type name: " << CR.type_name << std::endl;
     std::cout << "  Momentum direction (vx,vy,vz; z is vertical): " << CR.momentum_ini.x << " " << CR.momentum_ini.y << " " << CR.momentum_ini.z << std::endl;
-    std::cout << "  Energy: " << CR.energy << std::endl;
+    std::cout << "  Energy: " << CR.energy << " MeV" << std::endl;
 
     const double nadir_angle = std::acos(-CR.momentum_ini.z);
 
-    std::cout << "  Nadir angle: " << nadir_angle * 180.0 / pi << std::endl;
+    std::cout << "  Nadir angle: " << nadir_angle * 180.0 / pi << " deg" << std::endl;
 
     std::ofstream myfile;
     _mkdir("./output");
