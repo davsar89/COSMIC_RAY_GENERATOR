@@ -38,7 +38,7 @@ int main(int argc, char **argv)
     _mkdir("./output");
     myfile.open("output/CR_list.txt");
 
-    const uint nb = 100000;
+    const uint nb = 10000;
 
     std::cout << "\nGenerating particles..." << std::endl;
 
